@@ -16,7 +16,7 @@ def get_good_work():
     href =[]
     amount = []
 
-    for i in range(16):
+    for i in range(5):
         url = "https://crowdworks.jp/public/jobs/category/37/type/task" +"?page=" + str(i)
         contents = requests. get(url).content
         soup = bs.BeautifulSoup(contents, "html.parser")
